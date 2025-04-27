@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Title of the ticket"
+      },
+      "description": {
+        "type": "string",
+        "description": "Detailed description of the ticket"
+      },
+      "priority": {
+        "type": "number",
+        "enum": [0, 1, 2, 3, 4],
+        "description": "Priority level (0-4)"
+      },
+      "estimate": {
+        "type": "string",
+        "pattern": "^P(?:[0-9]+D)?(?:T(?:[0-9]+H)?(?:[0-9]+M)?)?$",
+        "description": "ISO 8601 duration format"
+      }
+    },
+    "required": ["title", "description", "priority"],
+    "additionalProperties": false
+  }
+}

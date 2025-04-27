@@ -1,0 +1,24 @@
+{
+  "title": "AI-Powered Project Management Assistant",
+  "overview": "An AI assistant that helps project managers break down tasks and manage their projects more effectively.",
+  "features": [
+    {
+      "name": "Task Breakdown",
+      "description": "AI-powered task breakdown that converts high-level requirements into actionable tickets"
+    },
+    {
+      "name": "Risk Assessment",
+      "description": "Automated risk assessment for project tasks and timelines"
+    }
+  ],
+  "requirements": [
+    {
+      "type": "functional",
+      "description": "Must integrate with Linear for task management"
+    },
+    {
+      "type": "technical",
+      "description": "Must use LangChain for AI orchestration"
+    }
+  ]
+}
